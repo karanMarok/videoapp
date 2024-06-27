@@ -5,7 +5,7 @@ import connectDB from "./db/index.js";
 import dotenv from "dotenv";
 
 dotenv.config({
-  path: "./env",
+  path: "./.env",
 });
 
 connectDB()
@@ -14,4 +14,4 @@ connectDB()
       console.log(`Server running at port ${process.env.PORT}`);
     })
   )
-  .catch(console.log("MONGODB Connection Failed!", err));
+  .catch(console.log("MONGODB Connection Failed!"));
